@@ -72,6 +72,15 @@ body {
 	margin-top: 1rem;
 	cursor: pointer;
 }
+.intro > .buttons > button a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	color: #eeeeee;
+	cursor: pointer;
+	text-decoration: none;
+}
 .intro > .buttons > button:first-child {
 	margin-right: 1rem;
 }
@@ -301,7 +310,7 @@ textarea {
 	html {
 		font-size: 30px;
 	}
-	.buttons button {
+	.buttons button, .buttons button a{
 		font-size: 1rem;
 	}
 	.item a {

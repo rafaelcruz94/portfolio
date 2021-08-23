@@ -3,7 +3,7 @@ import GetAppOutlinedIcon from '@material-ui/icons/GetAppOutlined';
 import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
-import Contact from './Contact'
+import Contact from './Contact';
 
 function Intro() {
 	const [open, setOpen] = useState(false);
@@ -22,7 +22,9 @@ function Intro() {
 				</p>
 				<div className='buttons'>
 					<button>
-						Resume <GetAppOutlinedIcon />
+						<a href='./download/CV-Rafael.pdf' download="CV-Rafael.pdf">
+							Resume <GetAppOutlinedIcon />
+						</a>
 					</button>
 					<button onClick={onOpenModal}>
 						Get In Touch&nbsp;

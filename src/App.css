@@ -103,6 +103,22 @@ body {
   cursor: pointer;
 }
 
+.intro > .buttons > button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  color: #eeeeee;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .intro > .buttons > button:first-child {
   margin-right: 1rem;
 }
@@ -413,7 +429,7 @@ textarea {
   html {
     font-size: 30px;
   }
-  .buttons button {
+  .buttons button, .buttons button a {
     font-size: 1rem;
   }
   .item a {
