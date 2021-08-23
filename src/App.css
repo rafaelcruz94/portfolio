@@ -1,38 +1,434 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 2160px;
+  margin: 0 auto;
+  background-color: #00adb5;
+  color: #00adb5;
+  min-height: 100vh;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  margin: auto;
+  border: 0.5rem solid #00adb5;
+  min-height: 100vh;
+  background: #222831;
+  background: -webkit-gradient(linear, left top, left bottom, from(#232932), to(#3a3f47));
+  background: linear-gradient(180deg, #232932 0%, #3a3f47 100%);
+  background-attachment: fixed;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.intro {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0.5rem;
+}
+
+.intro > h4 {
+  margin-top: 1rem;
+  background-color: #00adb5;
+  color: #222831;
+  padding: 0 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.intro > p {
+  color: #eeeeee;
+}
+
+.intro > .buttons > button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: 2px solid #00adb5;
+  color: #eeeeee;
+  padding: 0.4rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.intro > .buttons > button:first-child {
+  margin-right: 1rem;
+}
+
+.intro > .buttons > button:hover,
+.form button:hover,
+.demo:hover {
+  background-color: rgba(0, 173, 181, 0.3);
+}
+
+.intro > .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro > .buttons svg {
+  font-size: 1.1rem !important;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #222831;
+  width: 100%;
+}
+
+.form > input,
+textarea {
+  outline: none;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 6px;
+  padding: 0 0.3rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.react-responsive-modal-modal {
+  background-color: #222831 !important;
+  width: auto !important;
+  border: 1px solid #00adb5;
+}
+
+.react-responsive-modal-closeButton > svg {
+  fill: #00adb5 !important;
+}
+
+.form button {
+  background-color: transparent;
+  border: 2px solid #00adb5;
+  border-radius: 6px;
+  color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.form button > svg,
+.email > svg {
+  font-size: 1.1rem !important;
+}
+
+.email p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.email small {
+  color: #eeeeee;
+}
+
+.footer {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #eeeeee;
+  width: 100%;
+}
+
+.footer a {
+  color: #eeeeee;
+  margin: 0 0.3rem;
+}
+
+.footer a svg {
+  font-size: 1rem !important;
+}
+
+.footer a:hover {
+  color: #00adb5;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio p {
+  color: #eeeeee;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 280px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: transparent;
+  color: #eeeeee;
+  margin: 0 0.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+  margin-top: 0.5rem;
+  pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item h3 {
+  color: #eeeeee;
+  padding: 0.7rem 0.5rem;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.item small {
+  padding: 0.5rem 0.5rem;
+}
+
+.item a {
+  text-decoration: none;
+  color: #eeeeee;
+  padding: 0.2rem 0.5rem;
+  border: 2px solid #00adb5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  font-size: 0.8rem;
 }
 
-.App-link {
-  color: #61dafb;
+.demo > svg {
+  font-size: 0.9rem !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.demo {
+  cursor: pointer;
+  pointer-events: fill;
+}
+
+.carousel-wrapper {
+  width: 98%;
+}
+
+.rec-arrow-left,
+.rec-arrow-right {
+  color: #00adb5 !important;
+  background-color: transparent !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.rec-arrow-left:hover,
+.rec-arrow-right:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.rec-dot {
+  border: 1px solid #00adb5 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.rec-dot_active {
+  background-color: rgba(0, 173, 181, 0.4) !important;
+}
+
+@media only screen and (max-width: 720px) {
+  html {
+    font-size: 0.8rem;
   }
-  to {
-    transform: rotate(360deg);
+  .buttons {
+    margin: 0.2rem 0 0.5rem 0;
+  }
+  .rec-pagination {
+    margin: 0 !important;
+  }
+  .footer {
+    height: 20px;
+  }
+  .portfolio h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .react-responsive-modal-modal {
+    width: 85% !important;
+  }
+  .intro p {
+    margin: 0.5rem auto;
+  }
+  .item {
+    height: 200px;
+  }
+  .App {
+    height: 100vh;
   }
 }
+
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+  .App {
+    height: 100vh;
+  }
+  .portfolio h1 {
+    font-size: 1.5rem;
+    margin: 0 auto;
+  }
+  .footer {
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .react-responsive-modal-modal {
+    width: 80% !important;
+  }
+  .form > input,
+  textarea {
+    width: 60%;
+  }
+  .form > input {
+    text-align: center;
+  }
+  .form > h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  html {
+    font-size: 30px;
+  }
+  .buttons button {
+    font-size: 1rem;
+  }
+  .item a {
+    padding: 0.5rem 0.5rem;
+  }
+  .item small {
+    padding: 1rem 0;
+  }
+  .item {
+    height: 500px;
+  }
+  .form input,
+  textarea,
+  .form button {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
