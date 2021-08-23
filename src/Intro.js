@@ -22,7 +22,7 @@ function Intro() {
 				</p>
 				<div className='buttons'>
 					<button>
-						<a href='./download/CV-Rafael.pdf' download="CV-Rafael.pdf">
+						<a href='https://drive.google.com/file/d/1AsBZYGiuhLb8z24qRxLJJULCuYHCq1b7/view' target='_blank' rel='noreferrer'>
 							Resume <GetAppOutlinedIcon />
 						</a>
 					</button>
