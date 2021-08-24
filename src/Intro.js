@@ -18,7 +18,7 @@ function Intro() {
 				<h4>Front-end Developer</h4>
 				<p>
 					I'm an enthusiastic developer who likes to take new challenges and
-					build stuff.
+					build web apps
 				</p>
 				<div className='buttons'>
 					<button>
