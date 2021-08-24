@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d811a1a3.chunk.css",
+    "main.css": "/portfolio/static/css/main.53774829.chunk.css",
     "main.js": "/portfolio/static/js/main.bc5c155b.chunk.js",
     "main.js.map": "/portfolio/static/js/main.bc5c155b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.12e85be9.js",
@@ -10,7 +10,7 @@
     "static/js/2.8aa9b255.chunk.js.map": "/portfolio/static/js/2.8aa9b255.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.b6f7359a.chunk.css.map": "/portfolio/static/css/2.b6f7359a.chunk.css.map",
-    "static/css/main.d811a1a3.chunk.css.map": "/portfolio/static/css/main.d811a1a3.chunk.css.map",
+    "static/css/main.53774829.chunk.css.map": "/portfolio/static/css/main.53774829.chunk.css.map",
     "static/js/2.8aa9b255.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8aa9b255.chunk.js.LICENSE.txt",
     "static/media/ChromeExtension.7f1eec2b.PNG": "/portfolio/static/media/ChromeExtension.7f1eec2b.PNG",
     "static/media/WeatherApp.605f36a9.png": "/portfolio/static/media/WeatherApp.605f36a9.png"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.12e85be9.js",
     "static/css/2.b6f7359a.chunk.css",
     "static/js/2.8aa9b255.chunk.js",
-    "static/css/main.d811a1a3.chunk.css",
+    "static/css/main.53774829.chunk.css",
     "static/js/main.bc5c155b.chunk.js"
   ]
 }
