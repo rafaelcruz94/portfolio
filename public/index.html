@@ -30,7 +30,16 @@
   <script>
     // This prevents zooming in using CTRL + mouse wheel.
     // See https://stackoverflow.com/a/67039291/6509751.
-    document.addEventListener('wheel', function(e) {
+    document.addEventListener('keydown', function (e) {
+      var keyCodes = [61, 107, 173, 109, 187, 189];
+      if (keyCodes.indexOf(event.which) != -1) {
+        event.preventDefault();
+      }
+    }, {
+      passive: false,
+    });
+
+    document.addEventListener('wheel', function (e) {
       e.ctrlKey && e.preventDefault();
     }, {
       passive: false,
